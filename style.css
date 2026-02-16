@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins&display=swap');
+
+body{
+
+margin:0;
+height:100vh;
+
+background:url("lover-bg.jpg") center/cover no-repeat fixed;
+
+font-family:Poppins;
+
+overflow:hidden;
+
+color:white;
+
+transition:1s;
+
+}
+
+
+.overlay{
+
+position:absolute;
+width:100%;
+height:100%;
+
+background:linear-gradient(
+to top,
+rgba(255,105,180,0.4),
+rgba(138,43,226,0.4)
+);
+
+}
+
+
+.center{
+
+position:absolute;
+
+top:50%;
+left:50%;
+
+transform:translate(-50%,-50%);
+
+text-align:center;
+
+}
+
+
+.title{
+
+font-family:'Great Vibes';
+
+font-size:80px;
+
+animation: glow 2s infinite alternate;
+
+}
+
+
+.subtitle{
+
+font-size:30px;
+
+}
+
+
+.message{
+
+font-size:35px;
+
+font-family:'Great Vibes';
+
+}
+
+
+button{
+
+padding:15px 40px;
+
+font-size:22px;
+
+border:none;
+
+border-radius:50px;
+
+margin:20px;
+
+cursor:pointer;
+
+transition:0.4s;
+
+}
+
+
+#yes{
+
+background:white;
+color:#ff4e50;
+
+}
+
+
+#yes:hover{
+
+transform:scale(1.2);
+
+box-shadow:0 0 40px white;
+
+}
+
+
+#no{
+
+background:#a18cd1;
+color:white;
+position:absolute;
+
+}
+
+
+/* Floating Hearts */
+
+.hearts span{
+
+position:absolute;
+bottom:-50px;
+font-size:30px;
+
+animation: float linear infinite;
+
+}
+
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0);
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(-100vh);
+opacity:0;
+
+}
+
+}
+
+
+/* Glow Animation */
+
+@keyframes glow{
+
+from{
+
+text-shadow:0 0 20px pink;
+
+}
+
+to{
+
+text-shadow:0 0 60px violet;
+
+}
+
+}
